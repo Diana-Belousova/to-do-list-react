@@ -1,38 +1,93 @@
+body {
+  background-color: #1A8B9D;
+  margin: 0;
+}
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  width: 50%;
+  background-color: #FFF5F5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+input {
+  background-color: #FFF5F5;
+  padding: 8px;
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid #B2D430;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 16px;
+  
+}
+.addBtn {
+  width: 70px;
+  border-radius: 0px 8px 8px 0px;
+
+}
+.btn {
+  background-color: #B2D430;
+  border: none;
+  color: #FFF5F5;
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.delBtn {
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+}
+.inputContainer {
+  display: flex;
+}
+ul, li {
+  list-style-type: none;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+h1 {
+  color: #B2D430;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 40px;
+}
+.crossed {
+  text-decoration: line-through 2px #B2D430;
+  background-color: #f0f0f0;
+
+}
+ul {
+  padding: 0px;
+}
+li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  max-width: 100%;
+  font-size: 20px;
+}
+.mainImage {
+  margin-bottom: 15px;
+}
+.itemImage {
+  margin-right: 20px;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* ------------------------------ */
+@media all and (max-width: 800px) {
+  .container {
+    width: 75%;
   }
 }

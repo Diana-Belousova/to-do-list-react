@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { List } from './List';
+import imageP from './free-sticker-productivity.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+      <h1>To do list...</h1>
+      <img className='mainImage' src={imageP} alt="productivity" width={150}/>
+
+      <List />
+      </div>
     </div>
   );
 }
